@@ -91,7 +91,6 @@ architecture RTL of Project_7_Segment_Top is
         );
 
         p_Switch_Count : process(i_Clk)
-            variable v_Count : natural range 0 to 9 := 0;
         begin
             if rising_edge(i_Clk) then
                 r_Switch_1 <= w_Switch_1;
